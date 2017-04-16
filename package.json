@@ -7,6 +7,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "gl-react": "^2.2.10",
+    "gl-react-native": "^2.42.2",
+    "gl-shader": "^4.2.1",
     "lottie-react-native": "^1.1.1",
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.3",

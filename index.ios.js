@@ -1,6 +1,5 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * Oringe React Native Sizzle
  * @flow
  */
 
@@ -14,6 +13,9 @@ import {
   View,
   Image,
 } from 'react-native'
+
+import {Surface} from 'gl-react-native'
+import GLImage from './src/GLImage'
 
 export default class oringe extends Component {
   constructor(props) {
@@ -37,18 +39,15 @@ export default class oringe extends Component {
 
   render() {
     return (
+      // TODO split this out in src/
       <View style={styles.background}>
         <Image
             resizeMode={Image.resizeMode.contain}
             style={styles.backgroundImage}
-            //source={{uri: 'https://farm3.staticflickr.com/2853/32736018454_5c3640c512_k.jpg'}}>
             source={require('./assets/stock-photo-101390981.jpg')} />
         <View style={styles.container}>
           <Animation
-            style={{
-              width: 300,
-              height: 300,
-            }}
+            style={styles.animation}
             source={require('./node_modules/lottie-ios/Lottie-Screenshot/Lottie-Screenshot/PinJump.json')}
             progress={this.state.progress}
           />
@@ -73,15 +72,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     margin: 20,
   },
+  animation: {
+    width: 300,
+    height: 300,
+  },
   image: {
     position: 'absolute',
     top: 0,
     bottom: 0,
     left: 0,
     right: 0,
-  },
-  background: {
-    flex: 1,
   },
   backgroundImage: {
     borderWidth: 0,
@@ -90,6 +90,9 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
+  },
+  background: {
+    flex: 1,
   },
   header: {
     backgroundColor: 'rgba(255,100,100,.2)',

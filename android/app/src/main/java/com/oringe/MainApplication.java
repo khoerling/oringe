@@ -3,6 +3,7 @@ package com.oringe;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.projectseptember.RNGL.RNGLPackage;
 import org.th317erd.react.DynamicFontsPackage;
 import com.airbnb.android.react.lottie.LottiePackage;
 import com.facebook.react.ReactNativeHost;
@@ -25,6 +26,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNGLPackage(),
             new DynamicFontsPackage(),
             new LottiePackage()
       );

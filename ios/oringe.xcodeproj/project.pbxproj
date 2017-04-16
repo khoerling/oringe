@@ -38,6 +38,7 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		785B0E41044F448281D8FAE7 /* libRCTDynamicFonts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D56C9A10E124F6B8B209A4C /* libRCTDynamicFonts.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		A920087BAD43465F81B7A5CC /* libRNGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E700A49AFA94B00898F096F /* libRNGL.a */; };
 		E8C5D097548B4BE192F5E7E3 /* libLottie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 873B748D3E024D649CF1A8EA /* libLottie.a */; };
 /* End PBXBuildFile section */
 
@@ -238,6 +239,13 @@
 			remoteGlobalIDString = AD8A56611D3FAF1400683126;
 			remoteInfo = RCTDynamicFonts;
 		};
+		536B5D091EA33E6D003FA84F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 605EBEEC60584C5A89032845 /* RNGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4107012F1ACB723B00C6AA39;
+			remoteInfo = RNGL;
+		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -291,7 +299,9 @@
 		1D56C9A10E124F6B8B209A4C /* libRCTDynamicFonts.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTDynamicFonts.a; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* oringe-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oringe-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* oringe-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "oringe-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E700A49AFA94B00898F096F /* libRNGL.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGL.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		605EBEEC60584C5A89032845 /* RNGL.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGL.xcodeproj; path = "../node_modules/gl-react-native/ios/RNGL.xcodeproj"; sourceTree = "<group>"; };
 		61FC6E8A0CAA438C9CF2D530 /* libLottieReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libLottieReactNative.a; sourceTree = "<group>"; };
 		654E68AAB8844733ACB83D80 /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../node_modules/lottie-react-native/lib/ios/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
 		75D96EA110714DD49ECAB389 /* Lottie.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "../node_modules/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
@@ -314,6 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A920087BAD43465F81B7A5CC /* libRNGL.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -488,6 +499,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		536B5CE81EA33E6D003FA84F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				536B5D0A1EA33E6D003FA84F /* libRNGL.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +542,7 @@
 				75D96EA110714DD49ECAB389 /* Lottie.xcodeproj */,
 				654E68AAB8844733ACB83D80 /* LottieReactNative.xcodeproj */,
 				9D50EDEF6B0D497BAD947D8A /* RCTDynamicFonts.xcodeproj */,
+				605EBEEC60584C5A89032845 /* RNGL.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -726,6 +746,10 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
+				{
+					ProductGroup = 536B5CE81EA33E6D003FA84F /* Products */;
+					ProjectRef = 605EBEEC60584C5A89032845 /* RNGL.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -920,6 +944,13 @@
 			remoteRef = 536B5CC21EA339C7003FA84F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		536B5D0A1EA33E6D003FA84F /* libRNGL.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGL.a;
+			remoteRef = 536B5D091EA33E6D003FA84F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1091,12 +1122,14 @@
 					"$(SRCROOT)/../node_modules/lottie-ios/Lottie-Screenshot/**",
 					"$(SRCROOT)/../node_modules/lottie-react-native/lib/ios/LottieReactNative",
 					"$(SRCROOT)/../node_modules/react-native-dynamic-fonts",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 				INFOPLIST_FILE = oringeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1120,12 +1153,14 @@
 					"$(SRCROOT)/../node_modules/lottie-ios/Lottie-Screenshot/**",
 					"$(SRCROOT)/../node_modules/lottie-react-native/lib/ios/LottieReactNative",
 					"$(SRCROOT)/../node_modules/react-native-dynamic-fonts",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 				INFOPLIST_FILE = oringeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1150,9 +1185,14 @@
 					"$(SRCROOT)/../node_modules/lottie-ios/Lottie-Screenshot/**",
 					"$(SRCROOT)/../node_modules/lottie-react-native/lib/ios/LottieReactNative",
 					"$(SRCROOT)/../node_modules/react-native-dynamic-fonts",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 				INFOPLIST_FILE = oringe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1173,9 +1213,14 @@
 					"$(SRCROOT)/../node_modules/lottie-ios/Lottie-Screenshot/**",
 					"$(SRCROOT)/../node_modules/lottie-react-native/lib/ios/LottieReactNative",
 					"$(SRCROOT)/../node_modules/react-native-dynamic-fonts",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 				INFOPLIST_FILE = oringe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1203,11 +1248,13 @@
 					"$(SRCROOT)/../node_modules/lottie-ios/Lottie-Screenshot/**",
 					"$(SRCROOT)/../node_modules/lottie-react-native/lib/ios/LottieReactNative",
 					"$(SRCROOT)/../node_modules/react-native-dynamic-fonts",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 				INFOPLIST_FILE = "oringe-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1241,11 +1288,13 @@
 					"$(SRCROOT)/../node_modules/lottie-ios/Lottie-Screenshot/**",
 					"$(SRCROOT)/../node_modules/lottie-react-native/lib/ios/LottieReactNative",
 					"$(SRCROOT)/../node_modules/react-native-dynamic-fonts",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 				INFOPLIST_FILE = "oringe-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1280,6 +1329,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.oringe-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1304,6 +1354,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
