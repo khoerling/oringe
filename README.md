@@ -7,8 +7,11 @@ Oringe Sizzle App
 ## Quick Start
 
     $ git clone git@github.com:khoerling/oringe.git
-    $ cd flume && npm i && npm start
-    $ open ios/flume.xcodeproj/
+    $ cd oringe && npm i && npm start
+    $ open ios/oringe.xcodeproj/
 
   Press Command+R in XCode to Build &amp; Run!
 
+  &nbsp;
+
+[![Fresh Software by Dimension](https://dimensionsoftware.com/images/software_by.png)](https://dimensionsoftware.com)
