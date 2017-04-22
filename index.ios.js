@@ -14,8 +14,7 @@ import {
   Image,
 } from 'react-native'
 
-import {Surface} from 'gl-react-native'
-import GLImage from './src/GLImage'
+import ShaderImage from './src/ShaderImage'
 
 export default class oringe extends Component {
   constructor(props) {
@@ -41,10 +40,7 @@ export default class oringe extends Component {
     return (
       // TODO split this out in src/
       <View style={styles.background}>
-        <Image
-            resizeMode={Image.resizeMode.contain}
-            style={styles.backgroundImage}
-            source={require('./assets/stock-photo-101390981.jpg')} />
+        <ShaderImage style={styles.backgroundImage} />
         <View style={styles.container}>
           <Animation
             style={styles.animation}

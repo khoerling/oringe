@@ -1,9 +1,12 @@
 
 import React, { Component } from 'react'
 import { AppRegistry, StyleSheet, Text, Image, Dimensions, View, ScrollView, SliderIOS} from 'react-native'
-import GL from 'gl-react'
 
-export default class GLImage extends Component {
+import {Surface} from 'gl-react-native'
+import GL from 'gl-react'
+const {Image: GLImage} = require("gl-react-image")
+
+export default class ShaderImage extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -12,6 +15,7 @@ export default class GLImage extends Component {
 
   render() {
     return (
+      <Surface width={300} height={300}>
       <GLComponent
         brightness={this.state.brightness}
         saturation={this.state.saturation}
@@ -22,11 +26,11 @@ export default class GLImage extends Component {
         mixFactor={this.state.mixFactor}
         width={this.state.width}
         height={this.state.height}>
-        <Image
-            resizeMode={Image.resizeMode.contain}
-            style={styles.backgroundImage}
-            source={require('../assets/stock-photo-101390981.jpg')} />
+        <GLImage
+            resizeMode='contain'
+            source={{uri: 'http://i.imgur.com/tCatS2c.jpg', width: 300, height: 300}} />
       </GLComponent>
+      </Surface>
     )
   }
 }
