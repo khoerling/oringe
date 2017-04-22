@@ -16,11 +16,11 @@ import {
 
 import ShaderImage from './src/ShaderImage'
 
-export default class oringe extends Component {
   constructor(props) {
     super(props)
     this.state = {
       progress: new Animated.Value(0),
+export default class Oringe extends Component {
     }
   }
 
@@ -111,4 +111,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('oringe', () => oringe);
+AppRegistry.registerComponent('Oringe', () => Oringe)
