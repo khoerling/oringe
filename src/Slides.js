@@ -84,7 +84,7 @@ export class First extends Component {
               source={require('../node_modules/lottie-ios/Lottie-Screenshot/Lottie-Screenshot/LightBulb.json')}
               progress={this.state.progress}
             />
-            <Animatable.Text animation="rubberBand" iterationCount={1} duration={1500} direction="alternate" style={styles.header}>
+            <Animatable.Text animation="rubberBand" delay={200} duration={1500} direction="alternate" style={styles.header}>
               Oringe | technology
             </Animatable.Text>
           </View>
@@ -105,17 +105,16 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    textAlign: 'center',
     marginVertical: 20,
   },
   heart: {
     width: 800,
     height: 800,
-    marginRight: -210,
+    marginRight: -185,
   },
   lightbulb: {
-    marginLeft: -40,
-    marginTop: -100,
+    marginLeft: -55,
+    marginTop: -150,
     marginBottom: 50,
     width: 300,
     height: 300,
@@ -127,12 +126,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     padding: 10,
     fontSize: 20,
-    textAlign: 'center',
   },
   ideas: {
     fontFamily: 'Menlo',
     fontSize: 15,
-    textAlign: 'center',
     backgroundColor: '#fff',
     color: '#555',
     padding: 5,

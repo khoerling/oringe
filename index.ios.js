@@ -48,9 +48,9 @@ export default class Oringe extends Component {
           time={this.state.time}
           width={width}
           height={height}
-          images={images.slice(2)}
+          images={images.slice(2.5)}
           pauseDuration={2}
-          transitionDuration={.5}>
+          transitionDuration={1}>
           <First />
           <Second />
           <Third />
