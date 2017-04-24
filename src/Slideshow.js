@@ -7,7 +7,9 @@ import {Surface} from "gl-react-native";
 import TransitionGenerator from "./TransitionGenerator";
 import Transition from "./Transition";
 
-const shaders = GL.Shaders.create(TransitionGenerator.shaders);
+const
+  shaders = GL.Shaders.create(TransitionGenerator.shaders),
+  { width, height } = require('Dimensions').get('window')
 
 class Slideshow extends React.Component {
   constructor (props) {
@@ -50,10 +52,10 @@ class Slideshow extends React.Component {
         />
       </Surface>
       <View style={styles.children}>
-        {this.props.children}
+        {this.props.children[this._currentTransition % 3]}
       </View>
       <View style={styles.legend}>
-        <Text style={styles.textName}>{transitionName}</Text>
+      <Text style={styles.textName}>{transitionName} |</Text>
         <Text style={styles.textInfo}>Oringe</Text>
       </View>
     </View>;
@@ -67,6 +69,9 @@ const styles = StyleSheet.create({
   children: {
     position: 'absolute',
     top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
   },
   legend: {
     position: "absolute",
@@ -82,7 +87,7 @@ const styles = StyleSheet.create({
   },
   textInfo: {
     color: "#cc3600",
-    marginLeft: 8,
+    marginLeft: 5,
   }
 });
 
