@@ -48,7 +48,7 @@ export class Third extends Component {
 export class Second extends Component {
   render() {
     return (
-      <Animatable.View style={styles.container}>
+      <Animatable.View style={styles.container} animation="zoomOutUp" delay={2700} duration={600}>
         <Animatable.Text style={styles.header} animation="zoomInUp" duration={1000}>
           Lottie + OpenGL + DynamicFonts
         </Animatable.Text>
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
   heart: {
     width: 800,
     height: 800,
-    marginRight: -185,
+    marginRight: -190,
   },
   lightbulb: {
     marginLeft: -55,
